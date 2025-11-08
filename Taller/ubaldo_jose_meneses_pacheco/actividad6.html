@@ -184,8 +184,20 @@
             </div>
             
             <!-- 🎯 ESCRIBE TU VERSIÓN AQUÍ DEBAJO -->
-            
-            
+            <div class="row mt-3">
+                <div class="col-md-3">
+                    <div class="bg-info text-white p-3 text-center">Mi Columna 1</div>
+                </div>
+                <div class="col-md-3">
+                    <div class="bg-secondary text-white p-3 text-center">Mi Columna 2</div>
+                </div>
+                <div class="col-md-3">
+                    <div class="bg-dark text-white p-3 text-center">Mi Columna 3</div>
+                </div>
+                <div class="col-md-3">
+                    <div class="bg-success text-white p-3 text-center">Mi Columna 4</div>
+                </div>
+            </div>
             
         </div>
 
@@ -281,8 +293,15 @@
             </div>
             
             <!-- 🎯 ESCRIBE TUS BOTONES AQUÍ DEBAJO -->
-            
-            
+            <button class="btn btn-warning btn-lg">
+                <i class="bi bi-star-fill"></i> Favorito
+            </button>
+            <button class="btn btn-info">
+                <i class="bi bi-pencil-square"></i> Editar Perfil
+            </button>
+            <button class="btn btn-dark btn-sm">
+                <i class="bi bi-upload"></i> Subir Archivo
+            </button>
             
         </div>
 
@@ -403,8 +422,43 @@
             </div>
             
             <!-- 🎯 ESCRIBE TUS TARJETAS AQUÍ DEBAJO -->
-            
-            
+            <div class="row mt-4">
+                <!-- TARJETA 1: Interstellar -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/400x200/000000/FFFFFF?text=Interstellar" class="card-img-top" alt="Interstellar">
+                        <div class="card-body">
+                            <h5 class="card-title">Interstellar</h5>
+                            <p class="card-text">Un equipo de exploradores viaja a través de un agujero de gusano en el espacio en un intento de asegurar la supervivencia de la humanidad.</p>
+                            <a href="#" class="btn btn-dark">Ver en Prime Video</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TARJETA 2: El Origen (Inception) -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/400x200/5a5a5a/FFFFFF?text=Inception" class="card-img-top" alt="Inception">
+                        <div class="card-body">
+                            <h5 class="card-title">El Origen (Inception)</h5>
+                            <p class="card-text">Un ladrón que roba secretos corporativos a través del uso de la tecnología de compartir sueños, se le da la tarea inversa de plantar una idea.</p>
+                            <a href="#" class="btn btn-danger">Ver en Netflix</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TARJETA 3: Mi Pobre Angelito -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/400x200/c1a1d3/FFFFFF?text=Home+Alone" class="card-img-top" alt="Home Alone">
+                        <div class="card-body">
+                            <h5 class="card-title">Mi Pobre Angelito</h5>
+                            <p class="card-text">Un niño de ocho años debe proteger su casa de un par de ladrones cuando accidentalmente su familia lo deja solo en casa durante las vacaciones de Navidad.</p>
+                            <a href="#" class="btn btn-info">Ver en Disney+</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             
         </div>
 
@@ -533,8 +587,121 @@
             <p><strong>💡 Puedes crear un nuevo archivo HTML o usar el espacio de abajo</strong></p>
             
             <!-- 🎯 ESCRIBE TU CÓDIGO AQUÍ -->
-            
-            
+            <div class="border rounded p-4 mt-4">
+
+                <!-- Navbar del Portfolio -->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light rounded mb-4">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Mi Portfolio</a>
+                        <div class="collapse navbar-collapse">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre Mí</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- Hero Section -->
+                <header class="text-center bg-primary text-white p-5 rounded mb-4">
+                    <h1 class="display-5">Ubaldo Meneses</h1>
+                    <p class="lead">Desarrollador Frontend en Formación</p>
+                </header>
+
+                <!-- Sección Sobre Mí -->
+                <section id="sobre-mi" class="my-5">
+                    <h2 class="text-center mb-4">Sobre Mí</h2>
+                    <div class="row align-items-center">
+                        <div class="col-md-4 text-center">
+                            <img src="https://via.placeholder.com/250" class="img-fluid rounded-circle" alt="Tu Foto">
+                        </div>
+                        <div class="col-md-8">
+                            <p>¡Hola! Soy Ubaldo, un apasionado por la tecnología y el desarrollo web. Actualmente estoy aprendiendo las bases del desarrollo frontend para construir aplicaciones web modernas e interactivas. Me encanta resolver problemas y crear interfaces de usuario intuitivas y atractivas.</p>
+                            <p>En mi tiempo libre, disfruto viendo películas de ciencia ficción y aprendiendo sobre nuevas tecnologías.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Sección Proyectos -->
+                <section id="proyectos" class="my-5 bg-light p-4 rounded">
+                    <h2 class="text-center mb-4">Mis Proyectos</h2>
+                    <div class="row">
+                        <!-- Proyecto 1 -->
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="https://via.placeholder.com/400x200/6f42c1/ffffff?text=Proyecto+1" class="card-img-top" alt="Proyecto 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Página de Tributo</h5>
+                                    <p class="card-text">Una página web sencilla creada con HTML y CSS para honrar a una figura importante.</p>
+                                    <a href="#" class="btn btn-outline-primary">Ver Proyecto</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Proyecto 2 -->
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="https://via.placeholder.com/400x200/fd7e14/ffffff?text=Proyecto+2" class="card-img-top" alt="Proyecto 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Calculadora Interactiva</h5>
+                                    <p class="card-text">Una calculadora funcional desarrollada con HTML, CSS y JavaScript.</p>
+                                    <a href="#" class="btn btn-outline-primary">Ver Proyecto</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Proyecto 3 -->
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="https://via.placeholder.com/400x200/20c997/ffffff?text=Proyecto+3" class="card-img-top" alt="Proyecto 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Formulario de Registro</h5>
+                                    <p class="card-text">Un formulario completo con validaciones usando HTML5 y JavaScript.</p>
+                                    <a href="#" class="btn btn-outline-primary">Ver Proyecto</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Sección Contacto -->
+                <section id="contacto" class="my-5">
+                    <h2 class="text-center mb-4">Contacto</h2>
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="contact-name" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="contact-name" placeholder="Tu Nombre">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="contact-email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="contact-email" placeholder="tu@email.com">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contact-message" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="contact-message" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success w-100">
+                            <i class="bi bi-send"></i> Enviar Mensaje
+                        </button>
+                    </form>
+                </section>
+
+                <!-- Footer del Portfolio -->
+                <footer class="text-center text-muted mt-5">
+                    <p>Conéctate conmigo en mis redes sociales:</p>
+                    <a href="#" class="btn btn-outline-dark btn-lg mx-2">
+                        <i class="bi bi-github"></i>
+                    </a>
+                    <a href="#" class="btn btn-outline-primary btn-lg mx-2">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="#" class="btn btn-outline-info btn-lg mx-2">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                </footer>
+
+            </div>
             
         </div>
 
