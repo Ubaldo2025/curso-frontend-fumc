@@ -72,48 +72,37 @@
 
                 <script>
                     function miAlerta() {
-                        // 🎯 ESCRIBE TU CÓDIGO AQUÍ
-                        // Usa: alert("Tu mensaje aquí");
-                        //
-                        // PISTA: Una alerta se escribe así:
-                        // alert("Hola, soy Juan y tengo 25 años");
-                        //
-                        // RECUERDA:
-                        // - El texto va entre comillas " "
-                        // - Termina con punto y coma ;
-                        //
-                        // EJEMPLO COMPLETO:
-                        // alert("Hola, soy María González y tengo 22 años");
-                        //
-                        // AHORA TÚ: Escribe tu alerta aquí debajo (borra esta línea y escribe tu código):
-
+                         alert("Hola, soy Ubaldo y tengo 45 años"); 
+                                                  
                     }
                 </script>
             </div>
         </div>
 
         <!-- SECCIÓN 2: PEDIR INFORMACIÓN AL USUARIO -->
-        <div class="seccion">
-            <h2>2️⃣ Pedir Información al Usuario</h2>
-
-            <div class="caja-ejemplo">
-                <h3>Prompt - Pedir Nombre</h3>
-                <button onclick="pedirNombre()">Pedir mi Nombre</button>
-                <p id="saludoPersonalizado" style="color: #4caf50; font-weight: bold; margin-top: 10px;"></p>
+            <div class="tarea">
+                <h3>🎯 TAREA 2: Pedir edad y mostrar mensaje</h3>
+                <p>Pide la edad del usuario y muestra un mensaje personalizado</p>
+                <button onclick="pedirEdad()">Pedir Edad</button>
+                <p id="mensajeEdad" style="color: #ff9800; font-weight: bold; margin-top: 10px;"></p>
 
                 <script>
-                    function pedirNombre() {
-                        // prompt() muestra una ventana para que el usuario escriba algo
-                        let nombre = prompt("¿Cuál es tu nombre?");
+                    function pedirEdad() {
+                        // PASO 1: Pedir la edad al usuario
+                        let edad = prompt("¿Cuántos años tienes?");
 
-                        // Verificamos que el usuario haya escrito algo
-                        if (nombre) {
-                            document.getElementById("saludoPersonalizado").textContent =
-                                "¡Hola " + nombre + "! ¡Bienvenido/a!";
+                        // Si el usuario canceló o dejó vacío, limpiamos el mensaje
+                        if (edad === null || edad.trim() === "") {
+                            document.getElementById("mensajeEdad").textContent = "";
+                            return;
                         }
+
+                        // PASO 2: Mostrar el mensaje en la página
+                        document.getElementById("mensajeEdad").textContent = "Tienes " + edad + " años";
                     }
                 </script>
             </div>
+        </div>
 
             <!-- 🎯 TAREA 2 -->
             <div class="tarea">
@@ -147,6 +136,8 @@
                         // document.getElementById("mensajeEdad").textContent = "Tienes " + edad + " años";
                         //
                         // AHORA TÚ: Copia las 2 líneas del ejemplo y pégalas aquí debajo:
+                        let edad = prompt("¿Cuántos años tienes?");
+                        document.getElementById("mensajeEdad").textContent = "Tienes " + edad + " años";
 
 
                     }

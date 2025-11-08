@@ -26,7 +26,15 @@
             border-radius: 8px;
             border: 2px solid #2196f3;
         }
-
+        .mi-caja-especial {
+                    background-color: rgb(230, 173, 197);
+                    color: rgb(138, 197, 27);
+                    padding: 40px;
+                    margin: 40px;
+                    border: 3px solid rgb(0, 183, 255);
+                    border-radius: 10px;
+                    text-align: center;
+                }
         /* Selector de ID - Se usa con numeral (#) */
         #titulo-especial {
             color: #d32f2f;
@@ -55,22 +63,22 @@
 
         /* MÁRGENES Y PADDING */
         .con-margen {
-            margin: 20px; /* Espacio FUERA de la caja */
+            margin: 30px; /* Espacio FUERA de la caja */
             background-color: #ffeb3b;
         }
 
         .con-padding {
-            padding: 20px; /* Espacio DENTRO de la caja */
+            padding: 80px; /* Espacio DENTRO de la caja */
             background-color: #4caf50;
             color: white;
         }
 
         /* BORDES */
         .con-borde {
-            border: 3px solid #9c27b0;
-            border-radius: 15px;
+            border: 5px solid #16dd41;
+            border-radius: 20px;
             padding: 10px;
-            margin: 10px 0;
+            margin: 20px 0;
         }
 
         /* 🎯 ZONA DE PRÁCTICA - Aquí escribirás tus estilos */
@@ -123,7 +131,7 @@
            AHORA TÚ: Copia el ejemplo de arriba y pégalo aquí debajo:
         */
         .texto-importante {
-               color: red;
+               color: rgb(240, 71, 19);
                font-size: 20px;
                font-weight: bold;
            }                   
@@ -155,7 +163,7 @@
                background-color: white;
                border: 2px solid gray;
                border-radius: 10px;
-               padding: 20px;
+               padding: 2%;
                box-shadow: 0 2px 5px rgba(0,0,0,0.2);
            }    
 
@@ -187,7 +195,7 @@
                 <p style="color: red;">Este texto es rojo usando "red"</p>
 
                 <p><strong>2. Hexadecimal:</strong> #RRGGBB (valores de 00 a FF)</p>
-                <p style="color: #2196f3;">Este texto es azul usando "#2196f3"</p>
+                <p style="color: #f32156;">Este texto es azul usando "#2196f3"</p>
 
                 <p><strong>3. RGB:</strong> rgb(rojo, verde, azul) - valores de 0 a 255</p>
                 <p style="color: rgb(76, 175, 80);">Este texto es verde usando "rgb(76, 175, 80)"</p>
@@ -238,7 +246,7 @@
 
                 AHORA TÚ: Modifica la línea de abajo agregando la clase:
             -->
-            <p>Este texto debe ser rojo, grande y en negrita.</p>
+            <p class="texto-importante">Este texto debe ser rojo, grande y en negrita.</p>
         </div>
 
         <!-- SECCIÓN 3: MÁRGENES Y PADDING -->
@@ -251,7 +259,7 @@
 
                 <p><strong>Padding:</strong> Espacio DENTRO del elemento (entre el borde y el contenido)</p>
                 <div class="con-padding">Este div tiene padding de 20px</div>
-            </div>
+            </div class="con-padding">Este div tiene padding de 20px</div>
 
             <p class="explicacion">Puedes especificar márgenes individualmente:</p>
             <ul>
@@ -259,7 +267,7 @@
                 <li>O usar el atajo: margin: arriba derecha abajo izquierda;</li>
                 <li>Lo mismo aplica para padding</li>
             </ul>
-        </div>
+        </div class="explicacion">Puedes especificar márgenes individualmente:</p>
 
         <!-- SECCIÓN 4: BORDES -->
         <div class="seccion">
@@ -313,12 +321,12 @@
             <!--
                 AHORA TÚ: Agrega class="tarjeta" al div de abajo:
             -->
-            <div>
+            <div class="tarjeta">
                 <h3>Mi Tarjeta Personal</h3>
-                <p><strong>Nombre:</strong> [Tu nombre]</p>
-                <p><strong>Edad:</strong> [Tu edad]</p>
-                <p><strong>Ciudad:</strong> [Tu ciudad]</p>
-                <p><strong>Pasatiempo favorito:</strong> [Tu pasatiempo]</p>
+                <p><strong>Nombre:</strong> [Ubaldo Meneses]</p>
+                <p><strong>Edad:</strong> [45]</p>
+                <p><strong>Ciudad:</strong> [Medellin]</p>
+                <p><strong>Pasatiempo favorito:</strong> [Movies tv]</p>
             </div>
 
             <!-- 🎯 TAREA 4: Crea tu propia tarjeta con estilos inline -->
@@ -339,9 +347,9 @@
 
                 AHORA TÚ: Copia el ejemplo de arriba y modifica el div de abajo:
             -->
-            <div>
+            <div style="background-color: #e6ffe1; padding: 40px; border: 10px solid #315a2c; text-align: center;">
                 <h3>Mi Comida Favorita</h3>
-                <p>[Escribe aquí tu comida favorita]</p>
+                <p><strong>COMIDA:</strong> [PEZCADO FRITO]</p>
             </div>
         </div>
 
@@ -395,6 +403,8 @@
 
 
 
+        <div class="mi-caja-especial">
+            <p>¡Ubaldo Meneses!</p>
         </div>
 
         <!-- BOTONES DE NAVEGACIÓN -->
